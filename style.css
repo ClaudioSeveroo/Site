@@ -1,0 +1,161 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #111;
+    box-shadow: 1px 2px 2px #111;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 20px;
+
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: white; /* Cor de fundo ao passar o mouse */
+    color: #111; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+}
+main {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 80px;
+    margin-bottom: 400px;
+    font-size: larger;
+}
+
+.imgclaudio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border: 5px solid #0f0; /* Define a borda inicial */
+    animation: borderColorChange 3s infinite alternate;
+}
+@keyframes borderColorChange {
+    0% {
+        border-color: #0f0;
+    }
+    100% {
+        border-color: black;
+    }
+}
+h1, h2 {
+    color: #0f0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    padding: 10px;
+    margin-top: 50px;
+}
+footer section {
+    margin: 0px;
+    font-size: small;
+}
+.footerh2 {
+  text-align: center;
+  color: white;
+}
+#sobre h1 {
+    font-size: xx-large;
+}
+#skills {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 600px;
+height: 300px;
+margin-bottom: 150px;
+}
+#skills h1 {
+    font-size: xx-large;
+}
+#skills img {
+   margin-top: 20px;
+}
+#contato {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    font-size: x-large;
+}
+#contato a {
+    display: flex;
+    justify-content: flex-start;
+    color:rgb(255, 255, 255);
+    text-decoration: none; /* Remove o sublinhado padrão */
+    padding: 8px 8px 1px 8px; /* Adiciona um pouco de espaço interno */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Suaviza a transição */
+    margin-bottom: 10px;
+
+
+}
+
+/* Efeito de hover */
+#contato a:hover {
+    color: rgb(0, 0, 0); /* Muda a cor do texto */
+    background-color: #0f0; /* Adiciona um fundo colorido */
+    border-radius: 5px; /* Suaviza os cantos */
+}
+
+/* Garante que o texto pode ser selecionado */
+#contato a::selection {
+    background-color: lightblue;
+    color: black;
+}
+#contato img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    margin-right: 10px;
+
+}

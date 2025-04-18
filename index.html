@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cláudio Severo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        function mostrarSecao(secao) {
+            document.querySelectorAll('main section').forEach(s => s.style.display = 'none'); // Somente seções do <main>
+            document.getElementById(secao).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>     
+            <ul>
+                <li><a href="#" onclick="mostrarSecao('sobre')">Sobre</a></li>
+                <li><a href="#" onclick="mostrarSecao('skills')">Skills</a></li>
+                <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h1>Oi, eu sou Cláudio Severo</h1>
+            <img class="imgclaudio" src="minhaimagem.jpg" alt="Minha Foto">
+            <p>Desenvolvedor apaixonado por tecnologia e <br>inovação.</p>
+            <p>Atualmente sou um universiário, curso também<br> um técnico, e amo a
+             área imensa de TI.</p>
+             <p></p>
+             <p>Eu fiz vários projetos, eles estão no meu <br>github, o qual se encontra na aba de contato.</p>
+        </section>
+        <section id="skills" style="display:none;">
+            <h2 id="hskills">Minhas Skills</h2>
+            <ul>
+                <li>&#9632; HTML</li>
+                <li>&#9632; CSS</li>
+                <li>&#9632; JavaScript com React, NodeJS</li>              
+            </ul>
+            <ul>
+                <li>&#9632; Java com Java Swing, JPA, Hibernate, Spring</li>
+            </ul>
+            <ul>
+                <li>&#9632; MySQL Server</li>
+                <li>&#9632; MongoDB</li>
+            </ul>
+            <img src="html.png" alt="">
+            <img src="css.png" alt="">
+            <img src="jsimagem.jpg" alt="">
+            <img src="reactimagem.jpg" alt="">
+            <img src="nodejs.png" alt="">
+            <img src="java.png" alt="">
+            <img src="hibernate.png" alt="">
+            <img src="spring.png" alt="">
+            <img src="mysql.png" alt="">
+            <img src="mongodb.png" alt="">
+
+            </section>
+        </section>
+        <section id="contato" style="display:none;">
+            <h2>Contato</h2>
+            <a  href=""><img src="email.jpg" alt="">E-mail</a>
+            <a href=""><img src="github.jpg" alt="">Github</a>
+            <a href=""><img src="telefone.jpg" alt="">Telefone</a>
+            <a href=""><img src="instagram.jpg" alt="">Instagram</a>
+            <a href=""><img src="linkedin.jpg" alt="">Linkedin</a>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2 class="footerh2">Cláudio Severo © 2025</h2>
+        </section>
+    </footer>
+</body>
+</html>
